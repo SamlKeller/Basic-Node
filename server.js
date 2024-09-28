@@ -21,7 +21,12 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get("*", (req, res) => {
+    console.log("Request from " + req.protocol + '://' + req.get('host') + req.originalUrl);
+});
+
 app.get('/', (req, res) => {
+    console.log("Got index request");
     res.render('index');
 });
 
