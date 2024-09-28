@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "basic-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Samuel Stankiewicz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

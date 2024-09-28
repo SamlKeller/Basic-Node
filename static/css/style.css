@@ -1,0 +1,317 @@
+:root {
+    /*--baseGreen: rgb(16, 51, 59);*/
+    --baseGreen: rgb(0, 133, 40);
+    --no-of-slides: 14;
+    --slides-in-view: 4;
+    --slide-width: 200px;
+    --slide-height: 100px;
+    --iteration-time: 25s;
+}
+
+@media only screen and (max-width: 1185px) {
+    #mainTitle {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        width: 90% !important;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #title {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    #subtitle {
+        margin: auto;
+        width: 80% !important;
+    }
+
+    #callCont {
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #title {
+        margin: auto auto 0px auto !important;
+        text-align: center !important;
+    }
+
+    #subtitle {
+        text-align: center !important;
+        margin: 0px auto 12px auto !important;
+    }
+
+    #callCont {
+        margin: 12px auto auto auto !important;
+    }
+
+}
+
+@media only screen and (max-width: 875px) {
+    #callCont {
+        flex-direction: column !important;
+        padding-top: 12px;
+        width: 300px !important;
+    }
+
+    #maybeThisToo {
+        margin-top: 12px;
+        margin-left: 0px !important;
+    }
+
+    #homeImage {
+        display: none;
+    }
+
+    #title {
+        font-size: 4rem !important;
+    }
+
+    #subtitle {
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #header {
+        width: 100% !important;
+    }
+}
+
+body {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#topCont {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/capitalDownsized.png');
+    padding-bottom: 12%;
+    background-size: cover;
+    background-position-y: bottom 800px;
+    background-repeat: no-repeat;
+}
+
+#mainTitle {
+    display: flex;
+    flex-direction: column;
+    margin: 7% auto auto auto;
+    width: 75%;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeUpAnimation {
+    0% {
+        margin-top: 12%;
+    }
+    100% {
+        margin-top: 7%;
+    }
+}
+
+#title {
+    color: white;
+    font-size: 6.2rem;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-weight: 700 !important;
+    padding: 0px !important;
+    width: 100% !important;
+    margin-bottom: 0px !important;
+}
+
+#subtitle {
+    font-family: 'roboto', sans-serif;
+    color: white;
+    width: 60%;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 0px !important;
+    padding: 0px 0px 6px 3px !important;
+}
+
+#callToAction {
+    padding: 4px;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    margin: auto auto auto 0px;
+    background: var(--baseGreen);
+    width: 100%;
+    transition-duration: 0.4s;
+    font-size: 1.2rem;
+}
+
+#maybeThisToo {
+    background: none;
+    border-radius: 24px;
+    width: 100%;
+    color: rgb(200, 200, 200);
+    border: 2px solid rgb(182, 182, 182);
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    transition-duration: 0.4s;
+    margin: auto auto auto 12px;
+    padding: 4px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+#callCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#callToAction:hover {
+    background: rgb(0, 117, 35);
+}
+
+#maybeThisToo:hover {
+    border: 2px solid white;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#affiliations {
+    border-radius: 12px 12px 0px 0px;
+    margin: 0px !important;
+    background-color: white;
+    height: 600px;
+    width: 100%;
+}
+
+#affiliationsTitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    margin: 4% auto 16px auto;
+}
+
+#uniFlex {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+
+.uni {
+    width: 200px !important;
+    margin: auto;
+}
+
+#construction {
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    margin: 18% auto auto auto;
+}
+
+#constructionTitle, #constructSubtitle {
+    text-align: center !important;
+    color: white !important;
+    margin: auto !important;
+}
+
+#constructionTitle {
+    font-size: 3rem;
+}
+
+#constructSubtitle {
+    font-size: 1.2rem;
+    padding-top: 4px;
+}
+
+#back {
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 18px;
+    font-weight: bold;
+}
+  
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(var(--slide-width) * var(--no-of-slides)* -1));
+    }
+}
+
+.carousel__wrapper {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel__slide {
+    animation: scroll var(--iteration-time) linear infinite;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    justify-content: center;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    box-sizing: border-box;
+}
+
+.carousel__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imageSub {
+    margin: auto;
+    width: 60%;
+}
+
+#highSchoolFlex {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.highSchoolImage {
+    height: 150px;
+    padding: 12px;
+    margin: auto;
+}
+
+#andover {
+    height: 225px !important;
+}
